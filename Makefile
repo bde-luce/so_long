@@ -15,7 +15,7 @@ NAME = so_long
 OBJ_DIR = obj
 
 SRCS = map_convert.c map_validity.c map_validity2.c map_winnability.c \
-	create_close_window.c key_hook.c so_long.c
+	create_close_window.c key_hook.c so_long.c bonus.c
 
 OBJS = $(SRCS:%.c=$(OBJ_DIR)/%.o)
 

@@ -33,6 +33,7 @@ typedef struct s_texture
 	void	*floor;
 	void	*wall;
 	void	*player;
+	void	*player2;
 	void	*exit;
 	void	*coll;
 }	t_texture;
@@ -42,6 +43,7 @@ typedef struct s_data
 	void		*mlx;
 	void		*mlx_win;
 	int			moves;
+	int			frame_count;
 	t_map		map;
 	t_texture	texture;
 }	t_data;
@@ -67,5 +69,8 @@ int		initial_map_window(void *param);
 int		close_window(void *param);
 
 int		apply_key(int keycode, void *param);
+
+void	print_counter(t_data *data);
+int		player_animation(void *param);
 
 #endif

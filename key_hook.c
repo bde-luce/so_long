@@ -139,5 +139,6 @@ int	apply_key(int keycode, void *param)
 		move_right(data);
 	if (keycode == 65364)
 		move_down(data);
+	print_counter(data);
 	return (0);
 }
