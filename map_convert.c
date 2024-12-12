@@ -20,8 +20,8 @@ void	error_exit(char *str)
 
 static void	check_file_type(char *file_name)
 {
-	char *str;
-	
+	char	*str;
+
 	str = ft_substr(file_name, ft_strlen(file_name) - 4, 4);
 	if (ft_strncmp(str, ".ber", 4) == 0)
 	{

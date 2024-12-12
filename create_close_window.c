@@ -55,7 +55,7 @@ void	file_to_image(t_data *data)
 	data->texture.player = mlx_xpm_file_to_image(data->mlx,
 			"textures/player.xpm", &h, &w);
 	data->texture.player2 = mlx_xpm_file_to_image(data->mlx,
-			"textures/player2.xpm", &h, &w);	
+			"textures/player2.xpm", &h, &w);
 	data->texture.exit = mlx_xpm_file_to_image(data->mlx,
 			"textures/exit.xpm", &h, &w);
 	data->texture.coll = mlx_xpm_file_to_image(data->mlx,
@@ -106,7 +106,10 @@ int	initial_map_window(void *param)
 		}
 		i++;
 	}
-	mlx_string_put(data.mlx, data.mlx_win, (SPRITE_SIZE / 2), (data.map.rows * SPRITE_SIZE) - (SPRITE_SIZE / 2), 0x00000, "MOVES:");
-	mlx_string_put(data.mlx, data.mlx_win, (SPRITE_SIZE * 2), (data.map.rows * SPRITE_SIZE) - (SPRITE_SIZE / 2), 0x00000, ft_itoa(data.moves));
+	mlx_string_put(data.mlx, data.mlx_win, (SPRITE_SIZE / 2),
+		(data.map.rows * SPRITE_SIZE) - (SPRITE_SIZE / 2), 0x00000, "MOVES:");
+	mlx_string_put(data.mlx, data.mlx_win, (SPRITE_SIZE * 2),
+		(data.map.rows * SPRITE_SIZE) - (SPRITE_SIZE / 2), 0x00000,
+		ft_itoa(data.moves));
 	return (0);
 }

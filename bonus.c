@@ -15,10 +15,10 @@
 void	print_counter(t_data *data)
 {
 	mlx_put_image_to_window(data->mlx, data->mlx_win, data->texture.wall,
-			2 * SPRITE_SIZE, (data->map.rows - 1) * SPRITE_SIZE);
+		2 * SPRITE_SIZE, (data->map.rows - 1) * SPRITE_SIZE);
 	mlx_string_put(data->mlx, data->mlx_win, (SPRITE_SIZE * 2),
-			(data->map.rows * SPRITE_SIZE) - (SPRITE_SIZE / 2), 0x00000,
-			ft_itoa(data->moves));
+		(data->map.rows * SPRITE_SIZE) - (SPRITE_SIZE / 2), 0x00000,
+		ft_itoa(data->moves));
 	data->frame_count = 0;
 }
 
