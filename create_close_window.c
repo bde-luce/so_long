@@ -22,6 +22,8 @@ static void	free_game(t_data *data)
 		mlx_destroy_image(data->mlx, data->texture.wall);
 	if (data->texture.player)
 		mlx_destroy_image(data->mlx, data->texture.player);
+	if (data->texture.player2)
+		mlx_destroy_image(data->mlx, data->texture.player2);
 	if (data->texture.exit)
 		mlx_destroy_image(data->mlx, data->texture.exit);
 	if (data->texture.coll)
@@ -48,6 +50,7 @@ void	file_to_image(t_data *data)
 	int	h;
 	int	w;
 
+	data->frame_count = 0;
 	data->texture.floor = mlx_xpm_file_to_image(data->mlx,
 			"textures/floor.xpm", &h, &w);
 	data->texture.wall = mlx_xpm_file_to_image(data->mlx,
@@ -109,7 +112,6 @@ int	initial_map_window(void *param)
 	mlx_string_put(data.mlx, data.mlx_win, (SPRITE_SIZE / 2),
 		(data.map.rows * SPRITE_SIZE) - (SPRITE_SIZE / 2), 0x00000, "MOVES:");
 	mlx_string_put(data.mlx, data.mlx_win, (SPRITE_SIZE * 2),
-		(data.map.rows * SPRITE_SIZE) - (SPRITE_SIZE / 2), 0x00000,
-		ft_itoa(data.moves));
+		(data.map.rows * SPRITE_SIZE) - (SPRITE_SIZE / 2), 0x00000, "0");
 	return (0);
 }
