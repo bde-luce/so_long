@@ -1,4 +1,4 @@
-# 🎮 so_long
+# 🕹️ so_long
 
 A small 2D game in C using MiniLibX, developed as part of the 42 curriculum.
 
