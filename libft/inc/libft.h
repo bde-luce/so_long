@@ -6,15 +6,13 @@
 /*   By: bde-luce <bde-luce@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/12 15:58:22 by bde-luce          #+#    #+#             */
-/*   Updated: 2024/12/09 17:38:43 by bde-luce         ###   ########.fr       */
+/*   Updated: 2026/03/23 12:41:46 by bde-luce         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
 
-# include "ft_printf/ft_printf.h"
-# include "get_next_line/get_next_line.h"
 # include <unistd.h>
 # include <stdlib.h>
 # include <string.h>
