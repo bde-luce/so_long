@@ -73,7 +73,7 @@ Run the program with a valid map file:
 
 The Makefile supports the following commands:
 
-- `make` or `make all` — compiles the library
+- `make` or `make all` — compiles the project
 
 - `make clean` — removes object files
 
