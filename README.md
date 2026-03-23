@@ -6,6 +6,19 @@ A small 2D game in C using MiniLibX, developed as part of the 42 curriculum.
 
 `so_long` is a core project of the 42 curriculum. The goal of this project is to build a simple 2D game using the MiniLibX graphics library, handling map parsing, player movement, collectibles, and win conditions.
 
+## 🎮 Gameplay
+
+The player (chicken) must collect all collectibles (eggs) on the map and then reach the exit (nest) to win.
+
+Controls:
+- `↑` — move up
+- `↓` — move down
+- `←` — move left
+- `→` — move right
+- `ESC` — close the game
+
+The exit only becomes usable after collecting all items.
+
 ## 🧩 What’s Included
 
 This project includes:
