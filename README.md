@@ -8,9 +8,19 @@ A small 2D game in C using MiniLibX, developed as part of the 42 curriculum.
 
 ## 🎮 Gameplay
 
+### Map Elements
+
+- `1` — wall
+- `0` — empty space
+- `P` — player starting position
+- `C` — collectible
+- `E` — exit
+
+Maps must be closed and surrounded by walls.
+
 The player (chicken) must collect all collectibles (eggs) on the map and then reach the exit (nest) to win.
 
-Controls:
+### Controls:
 - `↑` — move up
 - `↓` — move down
 - `←` — move left
